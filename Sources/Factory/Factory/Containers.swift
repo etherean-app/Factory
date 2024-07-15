@@ -41,7 +41,7 @@ import Foundation
 ///  Registrations and scope caches will persist as long as the associated container remains in scope.
 ///
 ///  See <doc:Containers> for more information.
-public final class Container: SharedContainer {
+public final class Container: SharedContainer, @unchecked Sendable {
     /// Define the default shared container.
     public static let shared = Container()
     /// Define the container's manager.
